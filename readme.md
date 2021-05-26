@@ -14,6 +14,8 @@ https://github.com/wailsapp/wails (GO)
 ## Electron Quickstart
 
 > Link: https://www.electronjs.org/docs/tutorial/quick-start
+> 
+In the sub-folder electron-quick-start the tutorial link (with packaging) has been tried out.
 
 ## Electron and PowerShell
 
