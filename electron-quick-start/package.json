@@ -1,0 +1,15 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "electron tryout",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hasp",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.0.1"
+  }
+}
