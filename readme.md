@@ -39,4 +39,28 @@ Next step: this tutorial.
 
 - First problem: <https://stackoverflow.com/questions/55093700/electron-5-0-0-uncaught-referenceerror-require-is-not-defined>
   - solved by adding `contextIsolation: false` (optional:  `enableRemoteModule: true`)
-- powersehll command format is a bit depricated -> see <https://rannn505.gitbook.io/> (we use `addParameter` and `addArgument` now)
+- powershell command format is a bit depricated -> see <https://rannn505.gitbook.io/> (we use `addParameter` and `addArgument` now)
+- as we dont use jquery we need to find an alternative how to react to button clicks - once again we relied in [fireship](https://fireship.io/lessons/electron-screen-recorder-project-tutorial/) for that:
+  
+  ```javascript
+    const getDiskBtn = document.getElementById('getDisk');
+    getDiskBtn.onclick = getDiskInfo;
+
+    // TODO: consider async/await 
+    function getDiskInfo() {
+      const computer = document.getElementById('computerName').value || 'localhost';
+
+      let script = new PSCommand(`& "${require('path').resolve(__dirname, 'ps_scripts/Get-Drives.ps1')}"`);
+      ps.addCommand(script.addParameter({ComputerName: computer}));
+      ps.invoke()
+      .then(output => {
+        console.log(output);
+        console.log(JSON.parse(output));  // works only if we got json stuff!!!
+        let out = document.getElementById('output');
+        out.innerText = output; // or innerHTML
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    };  
+  ```

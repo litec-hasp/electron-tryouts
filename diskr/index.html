@@ -9,14 +9,33 @@
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Diskr</title>
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="styles\styles.css">
   </head>
   <body>
-    <div class="container">
+      <!-- Form -->
+      <div class="row top-buffer">
+        <div class="col-lg-6 mx-auto">
+        <div class="input-group">
+          <input id="computerName" type="text" class="form-control" placeholder="Computer Name">
+          <span class="input-group-btn">
+            <button id="getDisk" class="btn btn-primary" type="button">Get Disk Info!</button>
+          </span>
+        </div>
+        </div>
+      </div>
+
+      <!-- Output -->
+      <div class="row justify-content-center">
+        <div id="output" class="col-lg-6 mx-auto"></div>
+      </div>
+
+    </div>
+    <div class="container top-buffer">
       <div class="alert alert-success" role="alert">
         <strong>Well done!</strong> You successfully read this important alert message.
       </div>
     </div>
-    <div class="container">
+    <div class="container top-buffer">
       <hr>
       <h6>Version Info</h6>
       We are using Node.js <span id="node-version"></span>,
@@ -25,6 +44,6 @@
       <hr>
   </div>
     <!-- You can also require other files to run in this process -->
-    <script type="module" src="./renderer.js"></script>
+    <script type="module" src="./src/renderer.js"></script>
   </body>
 </html>
