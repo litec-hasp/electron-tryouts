@@ -5,11 +5,11 @@ Eyopener: <https://github.com/kamranahmedse/developer-roadmap> - SO COOOOOOOL!
 
 ## Alternatives
 
-<https://blog.logrocket.com/why-use-electron-alternative/>
-<https://github.com/sudhakar3697/electron-alternatives>
-<https://web.dev/progressive-web-apps/>
-<https://github.com/zserge/lorca> (GO)
-<https://github.com/wailsapp/wails> (GO)
+- <https://blog.logrocket.com/why-use-electron-alternative/>
+- <https://github.com/sudhakar3697/electron-alternatives>
+- <https://web.dev/progressive-web-apps/>
+- <https://github.com/zserge/lorca> (GO)
+- <https://github.com/wailsapp/wails> (GO)
 
 ## Electron Quickstart
 
