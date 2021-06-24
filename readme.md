@@ -1,7 +1,7 @@
 # Electron Tryouts
 
 Well, first link has nothing to do with Electron, but need to be mentioned:
-Eyopener: <https://github.com/kamranahmedse/developer-roadmap> - SO COOOOOOOL!
+Eyopener: <https://github.com/kamranahmedse/developer-roadmap> - HAVE A LOOK AT THAT!
 
 ## Alternatives
 
@@ -40,7 +40,7 @@ Next step: this tutorial.
 - First problem: <https://stackoverflow.com/questions/55093700/electron-5-0-0-uncaught-referenceerror-require-is-not-defined>
   - solved by adding `contextIsolation: false` (optional:  `enableRemoteModule: true`)
 - powershell command format is a bit depricated -> see <https://rannn505.gitbook.io/> (we use `addParameter` and `addArgument` now)
-- as we dont use jquery we need to find an alternative how to react to button clicks - once again we relied in [fireship](https://fireship.io/lessons/electron-screen-recorder-project-tutorial/) for that:
+- as we dont use jquery we need to find an alternative how to react to button clicks - once again we relied on [fireship](https://fireship.io/lessons/electron-screen-recorder-project-tutorial/) for that:
   
   ```javascript
     const getDiskBtn = document.getElementById('getDisk');
